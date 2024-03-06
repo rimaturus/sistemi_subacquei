@@ -38,7 +38,7 @@ RUN apt-get update \
     evtest \
     jstest-gtk \
     python3-serial \
-    rosdep update
+    && rosdep update \
     && rm -rf /var/lib/apt/lists/*
 
 RUN usermod -aG dialout ${USERNAME}
