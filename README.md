@@ -1,5 +1,5 @@
 ## System reqs
-***Ubuntu 22.04***
+***Ubuntu 22.04*** and 
 ***Needed Nvidia GPU***
 
 ## Prerequisites:
