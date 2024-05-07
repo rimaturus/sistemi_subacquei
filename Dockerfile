@@ -43,7 +43,7 @@ RUN apt-get update \
 
 RUN usermod -aG dialout ${USERNAME}
 
-WORKDIR /home/${USERNAME}/catkin
+WORKDIR /home/${USERNAME}/catkin_ws
 
 
 # USER ros
