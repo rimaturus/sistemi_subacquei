@@ -17,7 +17,7 @@ Now you can create the container:
   1) Go inside the main cloned folder ***sistemi_subacquei/***
   2) Open a terminal inside this folder *(right-click -> open a terminal inside this folder)*
   3) Build the custom docker image: ```docker build -t sistemi_subacquei_image .``` *(include the endpoint)*
-  4) Attach a container to that image: ```docker run -it --user ros --gpus all --network=host --ipc=host -v $PWD/catkin_ws:/home/ros/catkin_ws -v /tmp/.X11-unix:/tmp/.X11-unix:rw --env=DISPLAY -v /dev:/dev --device-cgroup-rule="c : rmw" sistemi_subacquei_image --name container_sistemi_subacquei``` 
+  4) Attach a container to that image: ```docker run -it --user ros --gpus all --network=host --ipc=host -v $PWD/catkin_ws:/home/ros/catkin_ws -v /tmp/.X11-unix:/tmp/.X11-unix:rw --env=DISPLAY -v /dev:/dev --device-cgroup-rule="c * : * rmw" --name container_sistemi_subacquei sistemi_subacquei_image``` 
   5) Now you are inside the container with ***Ubuntu 18.04 and ROS1 Melodic*** already setup
   6) ***Basic command***:
      1) If you want to exit it and return to your basic system use **CTRL + D**
